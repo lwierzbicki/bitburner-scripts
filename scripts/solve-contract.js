@@ -3,6 +3,7 @@ export async function main(ns) {
 	solveContract(ns, ns.args[0], ns.args[1], 0);
 }
 
+// function to solve contracts 
 export function solveContract(ns, host, filename, logLevel=0) {
 	var type = ns.codingcontract.getContractType(filename, host);
 	var desc = ns.codingcontract.getDescription(filename, host);
